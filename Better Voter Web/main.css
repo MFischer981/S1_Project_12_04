@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+    margin: 0;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+h1 {
+    margin: 0 0 12px;
+    background: linear-gradient(45deg, rgba(93, 149, 221, 0.65), rgba(53, 22, 163, .25)),
+        url("https://images.pexels.com/photos/921259/pexels-photo-921259.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center;
+    padding: 20px 40px;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 20px black;
+    font-size: 44px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+h2 {
+    margin: 6px 0;
+}
+
+h4 {
+    margin: 2px 0;
+}
+
+div.bar {
+    display: block;
+    height: 20px;
+    background: rgb(224, 224, 224);
+    width: 200px;
+    border-radius: 6px;
+}
+
+div.bar_inner {
+    display: block;
+    height: 20px;
+    border-radius: 6px;
+}
+
+div.bar_inner.D {
+    background-color: #400fe9;
+    background-image: linear-gradient(43deg, #400fe9 0%, #4dc0e4 100%);
+}
+
+div.bar_inner.R {
+    background-color: #e90f60;
+    background-image: linear-gradient(43deg, #e90f60 0%, #e4714d 100%);
+}
+
+div.bar_inner.I {
+    background-color: #c6c4d0;
+    background-image: linear-gradient(43deg, #a6a5ac 0%, #b9b9b9 100%);
+}
+
+section {
+    padding: 20px;
+    width: calc(25% - 40px);
+    float: left;
+    margin: 20px 0;
+}
+
+@media (max-width: 950px) {
+    section {
+        padding: 20px;
+        width: calc(33% - 40px);
+        float: left;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 740px) {
+    section {
+        padding: 20px;
+        width: calc(50% - 40px);
+        float: left;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 20px;
+        width: calc(100% - 40px);
+        float: left;
+        margin: 20px 0;
+    }
+}
