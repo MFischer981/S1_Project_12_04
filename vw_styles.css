@@ -177,9 +177,9 @@ td.dem, td.rep, td.ind {
    width: 2px;
 }
 
-td.dem {background-color: rgba(0, 0, 255, 0.5);}
-td.rep {background-color: rgba(255, 0, 0, 0.5);}
-td.ind {background-color: rgba(0, 255, 0, 0.5);}
+td.dem {background-color: rgb(74, 74, 175);}
+td.rep {background-color: rgb(202, 67, 67);}
+td.ind {background-color: rgb(90, 90, 90);}
 
 /* Footer Styles */
 

@@ -16,14 +16,7 @@ var candidate = [
 ];
 
 var party = [
-    ["D", "R", "I"],
-    ["D", "R", "I"],
-    ["D", "R", "I"],
-    ["D", "R", "I"],
-    ["D", "R", "I"],
-    ["D", "R", "I"],
-    ["D", "R", "I"],
-    ["D", "R", "I"]
+    "D", "R", "I"
 ];
 
 var votes = [
@@ -38,14 +31,16 @@ var votes = [
 ];
 
 
-var electionHTML = "<h1>" + raceTitle + "</h1>";
+var electionHTML = "<h1>" + raceTitle + "</h1><main>";
 for (var i = 0; i < race.length; i++) {
-    electionHTML += "<section><h2>" + race[i];
+    electionHTML += "<section id='race" + i + "'><h2>" + race[i];
     for (var j = 0; j < candidate[i].length; j++) {
         var totalVotes = votes[i][0] + votes[i][1] + votes[i][2];
         var percentVotes = (votes[i][j] / totalVotes) * 100;
-        electionHTML += "<h4>" + candidate[i][j] + " (" + party[i][j] + ") " + "<br><div class='bar'><div class='bar_inner " + party[i][j] + "' style='width:" + percentVotes.toFixed(0) * 2 + "px;'></div></div>" + votes[i][j].toLocaleString() + " " + percentVotes.toFixed(1) + "%</h4>";
+        electionHTML += "<h4>" + candidate[i][j] + " (" + party[j] + ") " + "<br><div class='bar'><div class='bar_inner " + party[j] + "' style='width:" + percentVotes.toFixed(0) * 2 + "px;'></div></div>" + votes[i][j].toLocaleString() + " " + percentVotes.toFixed(1) + "%</h4>";
     }
     electionHTML += "</h2></section>";
-};
+    var win = votes[i].indexOf(Math.max(votes[i]));
+}
 document.getElementById("body").innerHTML = electionHTML;
+

@@ -17,7 +17,6 @@ h1 {
     text-shadow: 0 0 20px black;
     font-size: 44px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
 }
 
 h2 {
@@ -25,13 +24,15 @@ h2 {
 }
 
 h4 {
-    margin: 2px 0;
+    margin: 10px 0 4px;
 }
 
 div.bar {
     display: block;
     height: 20px;
     background: rgb(224, 224, 224);
+    background-color: #bdbdbd;
+    background-image: linear-gradient(43deg, #bdbdbd 0%, #dbdada 100%);
     width: 200px;
     border-radius: 6px;
 }
@@ -57,36 +58,28 @@ div.bar_inner.I {
     background-image: linear-gradient(43deg, #a6a5ac 0%, #b9b9b9 100%);
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 section {
+    flex: 1 1 320px;
     padding: 20px;
-    width: calc(25% - 40px);
-    float: left;
-    margin: 20px 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin: 20px;
+    border-radius: 10px;
 }
 
-@media (max-width: 950px) {
-    section {
-        padding: 20px;
-        width: calc(33% - 40px);
-        float: left;
-        margin: 20px 0;
-    }
+.dem_win {
+    background-color: blue;
 }
 
-@media (max-width: 740px) {
-    section {
-        padding: 20px;
-        width: calc(50% - 40px);
-        float: left;
-        margin: 20px 0;
-    }
+.rep_win {
+    background-color: rgb(255, 0, 0);
 }
 
-@media (max-width: 480px) {
-    section {
-        padding: 20px;
-        width: calc(100% - 40px);
-        float: left;
-        margin: 20px 0;
-    }
+.ind_win {
+    background-color: rgb(92, 92, 92);
 }
