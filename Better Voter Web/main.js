@@ -40,7 +40,5 @@ for (var i = 0; i < race.length; i++) {
         electionHTML += "<h4>" + candidate[i][j] + " (" + party[j] + ") " + "<br><div class='bar'><div class='bar_inner " + party[j] + "' style='width:" + percentVotes.toFixed(0) * 2 + "px;'></div></div>" + votes[i][j].toLocaleString() + " " + percentVotes.toFixed(1) + "%</h4>";
     }
     electionHTML += "</h2></section>";
-    var win = votes[i].indexOf(Math.max(votes[i]));
 }
 document.getElementById("body").innerHTML = electionHTML;
-
